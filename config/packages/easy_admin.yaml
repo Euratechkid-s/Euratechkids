@@ -8,12 +8,19 @@ easy_admin:
             class: App\Entity\ReservationAtelier   
         CreationAtelier:
             class: App\Entity\CreateAtelier
-            form:
+            list:
                 fields:
-                    - {property: "image", type: "file", base_path: '/'}
+                    - {property: "image", type: "image", base_path: '/'}
                     - "titre"
                     - {property: "description", type: "text_editor"}
                     - "date"
+            form:
+                fields:
+                    - { property: 'image', type: 'file', type_options: { data_class: null } }
+                    - 'titre'
+                    - {property: "description", type: "text_editor"}
+                    - 'date'
+
         Ecoles:
             class: App\Entity\School
 
