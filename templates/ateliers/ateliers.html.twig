@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+		<div class="container-fluid px-5 py-5">
+		<h2 class="text-center display-4">Venez découvrir nos ateliers</h2>
+			<div class="row">
+			{% for atelier in ateliers %}
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pt-3 pb-3">
+					<div class="card w-100 h-100">
+					{% if atelier.image %}
+					  <img class="img-fluid" src="{{atelier.image}}" />
+					{% endif %}
+					  <div class="card-body">
+					    <h5 class="card-title text-center">{{ atelier.titre }} </h5>
+					    <p class="card-text text-secondary text-justify">
+							{{ atelier.description|raw }}
+						</p>
+						<p class="text-center bg-light">
+						{{ atelier.date | date('d/m/Y') }}</p><br/>
+					    <a href="{{ path('formulaire_inscription') }}" class="btn btn-info mt-2 w-100">Réservez ce cours</a>
+					  </div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+{% endblock %}
