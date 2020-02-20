@@ -43,7 +43,9 @@ class FormType extends AbstractType
             ->add('ville', ChoiceType::class,[
                 'choices'=>[
                     "Lille"  => 'Lille',
-                    "Roubaix" => "Roubaix"
+                    "Hellemmes" => 'Hellemmes',
+                    "Lomme" => 'Lomme',
+                    "Autre" => 'Autre'
                 ],
                 "label" => "Ville :"
 

@@ -17,7 +17,7 @@
 						</p>
 						<p class="text-center bg-light">
 						{{ atelier.date | date('d/m/Y') }}</p><br/>
-					    <a href="{{ path('formulaire_inscription') }}" class="btn btn-info mt-2 w-100">Réservez ce cours</a>
+					    <a href="{{ path('formulaire_inscription', { titre : atelier.titre , id : atelier.id }) }}" class="btn btn-info mt-2 w-100">Réservez ce cours</a>
 					  </div>
 					</div>
 				</div>
