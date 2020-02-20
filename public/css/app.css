@@ -609,3 +609,17 @@ footer a #lille  {
   padding-top: 25px;
   background-color: #17a2b8;
 }
+
+
+.btn2 {
+  background-image: linear-gradient(
+    to right,
+    #314755,
+    #26a0da,
+    #314755
+  );
+}
+
+.btn2:hover {
+  background-position: right;
+}
