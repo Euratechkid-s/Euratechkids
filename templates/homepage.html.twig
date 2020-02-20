@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div id="progress"></div>
+    
      <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -54,12 +56,12 @@
                     </div>
                 </div>
                 <h3>N'oubliez pas votre prochain atelier :</h3>
-            
         </div>
+        {% endif %}
 
         <div class="container-fluid text-center">
         
-            {% endif %}
+
             
             <h1 id="typing">Initiez vos enfants au monde du numérique</h1>
 			<h4 class="pt-3 pb-3">EuraTechnologies renforce son programme d’accompagnement des plus jeunes avec <br/> 

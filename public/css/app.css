@@ -7,6 +7,17 @@
 
 /* fin général */
 
+#progress {
+  background-color: rgb(31, 152, 233);
+  height: 6px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
 /* navbar début */
 
 .navbar-header {
