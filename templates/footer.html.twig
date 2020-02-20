@@ -1,5 +1,6 @@
 {% block footer %}
 <footer>
+    {% if form2 is defined %}
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
@@ -17,37 +18,21 @@
                         <li>59000 Lille</li>
                     </ul>
                 </div>
-                <div>
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
-                   
-                    
-                    <h3> Newsletter </h3>
-                            <div class="my-custom-class-for-errors">
-                                
-                            </div>
 
-                            <div class="row">
-                                <div class="col">
-                                  
-                                </div>
-                                <div>
-                                <ul>
-                                    <li>
-                                        <div class="input-append newsletter-box text-center">
-                                        
-                                            <button class="btn  bg-gray" type="submit">S'inscrire à la Newsletter</button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                                
-                            </div>
-                     
-                      
-                    </div>
-                        
 
-                   
+            <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <h3> Newsletter </h3>
+                <ul>
+                    <li>
+                        {{ form_start(form2) }}
+                        <div class="input-append newsletter-box text-center">
+                            {{ form_row(form2.email) }}
+                            <button class="btn  bg-gray" type="submit">S'inscrire à la Newsletter</button>
+                        </div>
+                        {{ form_end(form2) }}
+                    </li>
+                </ul>
+                
                     <ul class="social">
                         <li> <a href="https://www.facebook.com/euratechkids" target="blank"> <i class="fab fa-facebook"></i></a> </li>
                         <li> <a href="https://twitter.com/euratechkids" target="blank"> <i class="fab fa-twitter">   </i> </a> </li>
@@ -75,4 +60,5 @@
         </div>
     </div>
 </footer>
+{% endif %}
 {% endblock %}
