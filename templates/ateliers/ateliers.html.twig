@@ -15,7 +15,7 @@
 					    <p class="card-text text-secondary text-justify">
 							{{ atelier.description|raw }}
 						</p>
-						<p class="text-center bg-light">
+						<p class="text-center" style="color:red; font-weight: bolder;">
 						{{ atelier.date | date('d/m/Y') }}</p><br/>
 					    <a href="{{ path('formulaire_inscription', { titre : atelier.titre , id : atelier.id }) }}" class="btn btn-info mt-2 w-100">Réservez ce cours</a>
 					  </div>
