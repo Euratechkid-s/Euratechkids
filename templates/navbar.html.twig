@@ -19,10 +19,17 @@
                     <a href="{{ path('security_logout') }}" 
                         class="nav-link" 
                         id="log" 
-                        alt="se connecter">Déconnexion</a>
+                        alt="se déconnecter">Déconnexion <i class="fas fa-sign-out-alt" style="font-size: 15px;"></i></a>
                 </li>
-                <li class="nav-list-item" id="bienvenue" >
-                    <a class="nav-link" id="bienvenue">Bienvenue {{ app.user.username }} !</a>
+                <li class="nav-list-item">
+                    <a href="{{ path('easyadmin')}}"
+                       class="nav-link"
+                       id="log" 
+                        alt="se connecter">Admin</a>
+                </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-link" id="bienvenue">{{ app.user.username }} <i class="fab fa-reddit" style="font-size: 15px;"></i></a>
                 </li>
 
                 {% else %} 
@@ -30,7 +37,7 @@
                     <a href="{{ path('security_login') }}" 
                         class="nav-link" 
                         id="log" 
-                        alt="se connecter">Connexion</a>
+                        alt="se connecter">Connexion <i class="fas fa-sign-in-alt" style="font-size: 15px;"></i></a>
                 <li class="nav-list-item">
                     <a href="{{ path('security_registration') }}" class="nav-link" id="log"> S'inscrire</a>
                 </li>

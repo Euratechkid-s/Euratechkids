@@ -19,26 +19,31 @@ class Reservation
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $mail;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank
      */
     private $telephone;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $adresse1;
 
@@ -49,21 +54,25 @@ class Reservation
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $ville;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank
      */
     private $cp;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
      */
     private $pays;
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\NotBlank
      */
     private $enfants;
 
@@ -84,7 +93,6 @@ class Reservation
      * @ORM\JoinColumn(nullable=false)
      */
     private $nomAtelier;
-
 
 
     public function getId(): ?int

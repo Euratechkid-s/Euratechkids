@@ -596,11 +596,7 @@ footer a #lille  {
 }
 
 /* BIENVENUE APP.USER */
-#bienvenue {
-  border: 1px solid black;
-  padding: 0px;
-  border-radius: 10px;
-}
+
 #navbar-brand {
   max-width: 150px;
 }
