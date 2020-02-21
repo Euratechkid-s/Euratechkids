@@ -24,7 +24,7 @@ class EnfantsType extends AbstractType
                 'label' => " Prenom :  "
             ])
             ->add('nom', TextType::class, [
-                'label' => " nom :  "
+                'label' => " Nom :  "
             ])
             ->add('accompagnants', ChoiceType::class,[
                 'choices'=>[

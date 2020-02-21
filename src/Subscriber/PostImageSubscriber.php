@@ -32,7 +32,7 @@ class PostImageSubscriber implements EventSubscriberInterface
         $result = $event->getSubject();
         $method = $event->getArgument('request')->getMethod();
 
-        if (! $result instanceof CreateAtelier || $method !== Request::METHOD_POST) {
+        if (!$result instanceof CreateAtelier || $method !== Request::METHOD_POST) {
             return;
         }
         //  possibilité de ragouter les image dans program et workshop / champ de table supprimé dans les entity

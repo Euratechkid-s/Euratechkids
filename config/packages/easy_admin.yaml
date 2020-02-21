@@ -5,8 +5,8 @@ easy_admin:
         NewsLetters: 
             class: App\Entity\NewsLetters 
         Reservations:
-            class: App\Entity\ReservationAtelier   
-        CreationAtelier:
+            class: App\Entity\ReservationAtelier
+        CreateAtelier:
             class: App\Entity\CreateAtelier
             list:
                 fields:
@@ -25,10 +25,17 @@ easy_admin:
             class: App\Entity\School
 
     site_name: '<img src="/css/images/logokids.png" />'
-    
+
     design:
+        menu:
+            - { entity: 'Contact' }
+            - { entity: 'NewsLetters' }
+            - { entity: 'CreateAtelier'}
+            - { entity: 'Ecoles'}
+            - { label: 'Retour au site', url: '/', rel: 'index', icon: ''}
+
         assets:
-            css:              
+            css:
                 - 'css/admin.css'
 
-        brand_color: '#7fe1fa'
+        brand_color: '#4E67A9'
