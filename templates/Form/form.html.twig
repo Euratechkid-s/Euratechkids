@@ -2,12 +2,13 @@
 
 
 {% block body %}
-
-    <h1 class="text-center"> {{ titre }} </h1>
+    <h1 class="text-center"> Inscription à l'atelier : {{ titre }} </h1>
         {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
-        
-        {{ form_widget(form)  }}
-        <input type="submit"/>
+        <div class="container col-md-6 col-sm-12">
+            {{ form_widget(form)  }}
+            <button type="submit" class="btn btn-lg btn-success mb-5 w-100">Valider</button>
+        </div>
+
         {{ form_end(form) }}
 
 
