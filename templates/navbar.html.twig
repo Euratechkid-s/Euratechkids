@@ -6,13 +6,13 @@
         <div class="container">
             <ul class="nav-list">
                 <li class="nav-list-item">
-                    <a href="{{ path('home_page') }}" class="nav-link">Accueil</a>
+                    <a href="{{ path('home_page') }}" class="nav-link" id="accueil">Accueil</a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="{{ path('ateliers') }}" class="nav-link">Ateliers</a>
+                    <a href="{{ path('ateliers') }}" class="nav-link" id="ateliers">Ateliers</a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="{{ path('ecoles') }}" class="nav-link">Écoles</a>
+                    <a href="{{ path('ecoles') }}" class="nav-link" id="ecoles">Écoles</a>
                 </li>
                 {% if app.user %}
                 <li class="nav-list-item">

@@ -2,14 +2,18 @@
 
 {% block body %}
 <div class="container">
-    <h1 class="display-4 text-center">Connexion</h1>
+    <h1 class="display-4 text-center" id="titreconnexion">Connexion</h1>
+
+
+
+
 
     <form action="{{ path('security_login') }}" method="post">
         <div class="row">
             <div class="col-md-6 col-sm-12 mx-auto">
                 <div class="form-group">
                     <input
-                        id="login" 
+                        id="login1" 
                         placeholder="Pseudo" 
                         required 
                         name="_username"
@@ -19,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     <input
-                        id="login"
+                        id="login2"
                         placeholder="Mot de passe" 
                         required 
                         name="_password"

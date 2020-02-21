@@ -1,9 +1,17 @@
 /* Général */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Schoolbell&display=swap';
 
 * {
-  font-family:  Helvetica;
+  font-family: 'Schoolbell' ;
 }
+
+#euratech {
+  color: white;
+  font-size: 80px;
+}
+
 
 /* fin général */
 
@@ -20,6 +28,7 @@
 
 /* navbar début */
 
+
 .navbar-header {
    text-align: center;
 }
@@ -31,7 +40,7 @@
 }
 
 nav.main-navigation  {
-    background-color: #E3E3E3;
+    background-color: #fff;
     right: 0;
     left: 0;
     height: 157px;
@@ -55,12 +64,24 @@ nav.main-navigation ul.nav-list {
 a.nav-link {
     text-decoration: none;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Schoolbell' ;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 	  color: black;
    
+}
+#accueil {
+  color: #33A3D7
+}
+#ateliers {
+  color: #C69820;
+}
+#ecoles {
+  color: #9B4E94;
+}
+#log {
+  color: #4E67A9;
 }
 
 a.nav-link:hover {
@@ -148,6 +169,47 @@ a.nav-link:hover {
 
 /* Fin carousel */
 
+#coding {
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+#euratechkids {
+  color: #4E67A9;
+}
+#prog {
+  color : #9B4E94;
+}
+#futur {
+  color: #C69820;
+}
+
+#euratech1 {
+  color: #33A3D7;
+  font-size: 150px;
+  text-shadow: 0 0 5px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 5px #000;
+  -webkit-text-shadow: 0 0 5px #000;
+}
+#euratech2 {
+  color: #C69820;
+  font-size: 150px;
+  text-shadow: 0 0 5px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 5px #000;
+  -webkit-text-shadow: 0 0 5px #000;
+}
+#euratech3 {
+  color: #9B4E94;
+  font-size: 150px;
+  text-shadow: 0 0 5px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  -moz-text-shadow: 0 0 5px #000;
+  -webkit-text-shadow: 0 0 5px #000;
+}
+#espace {
+  font-size: 25px;
+}
+
+
 
 /* début card */
 
@@ -156,12 +218,30 @@ a.nav-link:hover {
 }
 
 /* LES BOXES */
+
+
+
+#soustitrecard {
+  font-family: 'Schoolbell' ;
+}
 @media screen and (max-width: 1024px)
 {
 	#crea, #ludique
 	{
 		padding-top: 80px;
 	}
+}
+#fig1 {
+  background-color: #4E67A9;
+}
+#fig2 {
+  background-color: #9B4E94;
+}
+#fig3 {
+  background-color: #C69820;
+}
+#fig4 {
+  background-color: #33A3D7;
 }
 button:focus {
   outline: none;
@@ -206,7 +286,7 @@ img {
   bottom: -80px;
   left: 8%;
   right: 8%;
-  background: #fff;
+ 
   color: #000;
   padding: 20px 15px;
 	box-shadow: 0 5px 10px #00000033;
@@ -218,7 +298,7 @@ img {
 	transform: translateX(-50%);
   bottom: 0;
   height: 2px;
-  background: #17a2b8;
+  background: #fff;
   content: '';
   width: 0;
   position: absolute;
@@ -240,12 +320,17 @@ img {
 	transform: translateY(5px);
 }
 
-.box figure:hover h5 {
-  color: #17a2b8;
+.box figure:hover .img1 {
+	box-shadow: 0px 0px 6px #0000004f, -10px -10px 1px #4E67A9;
 }
-
-.box figure:hover img {
-	box-shadow: 0px 0px 6px #0000004f, -10px -10px 1px #17a2b8;
+.box figure:hover .img2 {
+	box-shadow: 0px 0px 6px #0000004f, -10px -10px 1px #9B4E94;
+}
+.box figure:hover .img3 {
+	box-shadow: 0px 0px 6px #0000004f, -10px -10px 1px #C69820;
+}
+.box figure:hover .img4 {
+	box-shadow: 0px 0px 6px #0000004f, -10px -10px 1px #33A3D7;
 }
 
 .box2 figure:hover figcaption {
@@ -269,7 +354,51 @@ img {
   
 }
 
+/* FIN BOXES */
+
+#textpeda {
+  font-size: 25px;
+}
+#n {
+  color: #33A3D7;
+}
+#o {
+  color: #C69820;
+}
+#t {
+  color: #9B4E94;
+}
+#r {
+  color: #33A3D7;
+}
+#e {
+  color: #C69820;
+}
+
+
 /* CARDS */
+
+#schoolcard1 {
+  background-color: #17a2b8;
+  color: white;
+}
+#schoolcard2 {
+  background-color: #9B4E94;
+  color: white;
+}
+#textmaternelle {
+  font-size: 18px;
+}
+#textprimaire {
+  font-size: 18px;
+}
+#titreecole {
+  font-size: 26px;
+}
+#duree {
+  font-size: 22px;
+}
+
 .card {
 	width:300px;
 	min-height:400px;
@@ -323,7 +452,7 @@ h1
   width:100%;
   height:auto;
   border-bottom:5px #323233 solid;
-  background:#fff;
+  background:#33A3D7;
   text-align:center;
   border-radius:10px;
   overflow:hidden;
@@ -331,7 +460,6 @@ h1
   transition:0.5s;
   margin-bottom:28px;
 }
-
 
 .our-team-main img
 {
@@ -361,8 +489,18 @@ h1
   left:0;
   padding:5px 15px 0 15px;
   text-align:center;
-  background:#fff;
-  
+}
+#prog1 {
+  background-color: #33A3D7;
+  color: white;
+}
+#prog2 {
+  background-color: #C69820;
+  color: white;
+}
+#prog3 {
+  background-color: #9B4E94;
+  color: white;
 }
 
 .team-front
@@ -371,7 +509,7 @@ h1
   height:auto;
   position:relative;
   z-index:10;
-  background:#fff;
+  background:#33A3D7;
   padding:15px;
   bottom:0px;
   transition: all 0.5s ease;
@@ -385,16 +523,19 @@ h1
 
 .our-team-main:hover
 {
-  border-color:#804c7b;
+  border-color:#4E67A9;
   transition:0.5s;
 }
 
 #pulse {
-box-shadow: 0 0 0 0 rgba(53, 184, 236, 0.7);
+margin-top: 10px;
+box-shadow: 0 0 0 0 white;
 border-radius: 50%;
 animation: pulse 1.25s infinite cubic-bezier(0.10, 0, 0, 1);
 }
 @keyframes pulse {to {box-shadow: 0 0 0 10px rgba(53, 184, 236, 0);}}
+
+
 /* Fin programme */
 
 /* Footer début */
@@ -408,7 +549,7 @@ animation: pulse 1.25s infinite cubic-bezier(0.10, 0, 0, 1);
 	display: block;
 }
 .footer {
-	background: #EDEFF1;
+	background: #fff;
 	height: auto;
 	padding-bottom: 30px;
 	position: relative;
@@ -511,7 +652,7 @@ footer a #lille  {
 	color: #EDEFF1;
 }
 .footer-bottom {
-	background: #E3E3E3;
+	background: #fff;
 	border-top: 1px solid #DDDDDD;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -534,23 +675,51 @@ footer a #lille  {
 
 /* INSCRIPTION */
 
-.register {
+.register1 {
   border: none;
   border-bottom: 2px solid #17a2b8;
 }
-.register:focus {
+.register1:focus {
   background-color: #17a2b8;
+  color: white;
+}
+.register2 {
+  border: none;
+  border-bottom: 2px solid #9B4E94;
+}
+.register2:focus {
+  background-color: #9B4E94;
+  color: white;
+}
+.register3 {
+  border: none;
+  border-bottom: 2px solid #C69820;
+}
+.register3:focus {
+  background-color: #C69820;
   color: white;
 }
 
 /* LOGIN */
 
-#login {
+#titreconnexion {
+  color: #C69820;
+}
+
+#login1 {
   border: none;
   border-bottom: 2px solid #17a2b8;
 }
-#login:focus {
+#login1:focus {
   background-color: #17a2b8;
+  color: white;
+}
+#login2 {
+  border: none;
+  border-bottom: 2px solid #9B4E94;
+}
+#login2:focus {
+  background-color: #9B4E94;
   color: white;
 }
 
@@ -570,13 +739,44 @@ footer a #lille  {
 
 /* CONTACT FORM */
 
-.contact{
+#enveloppe {
+  color: #4E67A9;
+}
+
+.prenom{
   border: none;
-  border-bottom: 2px solid #17a2b8;
+  border-bottom: 2px solid #33A3D7;
   width: 100%;
 }
-.contact:focus {
-  background-color: #17a2b8;
+.prenom:focus {
+  background-color: #33A3D7;
+  color: white;
+}
+.commune{
+  border: none;
+  border-bottom: 2px solid #9B4E94;
+  width: 100%;
+}
+.commune:focus {
+  background-color: #9B4E94;
+  color: white;
+}
+.mail{
+  border: none;
+  border-bottom: 2px solid #C69820;
+  width: 100%;
+}
+.mail:focus {
+  background-color: #C69820;
+  color: white;
+}
+.message{
+  border: none;
+  border-bottom: 2px solid #33A3D7;
+  width: 100%;
+}
+.message:focus {
+  background-color: #33A3D7;
   color: white;
 }
 
@@ -590,10 +790,7 @@ footer a #lille  {
   margin-bottom: 30px;
 }
 
-#schoolcard {
-  background-color: #17a2b8;
-  color: white;
-}
+
 
 /* BIENVENUE APP.USER */
 
@@ -604,4 +801,18 @@ footer a #lille  {
 #content {
   padding-top: 25px;
   background-color: #17a2b8;
+}
+
+/* FIN APP.USER */
+
+#textecoles {
+  font-size: 25px;
+}
+
+#android {
+  width: 6%;
+  position: fixed;
+  z-index: 222;
+  right:  0;
+  bottom: 0;
 }

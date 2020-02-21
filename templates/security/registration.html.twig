@@ -2,17 +2,17 @@
 
 {% block body %}
 <div class="container">
-    <h1 class="display-4 text-center">Inscription sur le site</h1>
+    <h1 class="display-4 text-center"><span id="n">Inscription</span> <span id="o">sur le</span> <span id="t">site</span></h1>
 
     {{ form_start(form) }}
     <div class="row">
         <div class="col-md-6 col-sm-12">
-        {{ form_row(form.username, {'label': false ,'attr' : {'placeholder': 'Votre pseudo', 'class' : 'register'}}) }}
-        {{ form_row(form.email, {'label': false ,'attr' : {'placeholder': 'Votre email', 'class' : 'register'}}) }}
+        {{ form_row(form.username, {'label': false ,'attr' : {'placeholder': 'Votre pseudo', 'class' : 'register1'}}) }}
+        {{ form_row(form.email, {'label': false ,'attr' : {'placeholder': 'Votre email', 'class' : 'register2'}}) }}
         </div>
         <div class="col-md-6 col-sm-12">
-        {{ form_row(form.password, {'label': false ,'attr' : {'placeholder': 'Mot de passe', 'class' : 'register'}}) }}
-        {{ form_row(form.confirm_password, {'label': false ,'attr' : {'placeholder': 'Confirmez le mot de passe', 'class' : 'register'}}) }}
+        {{ form_row(form.password, {'label': false ,'attr' : {'placeholder': 'Mot de passe', 'class' : 'register3'}}) }}
+        {{ form_row(form.confirm_password, {'label': false ,'attr' : {'placeholder': 'Confirmez le mot de passe', 'class' : 'register3'}}) }}
         </div>
     </div>
     <div class="container text-center mt-3 mb-5">
@@ -21,5 +21,8 @@
     {{ form_end(form) }}
 </div>
 
+<div class="text-center">
+<img src="css/images/robot4.png"/>
+</div>
 
 {% endblock %}
