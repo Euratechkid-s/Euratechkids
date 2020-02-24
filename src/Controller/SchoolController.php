@@ -39,6 +39,7 @@ class SchoolController extends AbstractController
             
             $manager->persist($school);
             $manager->flush();
+            return $this->redirectToRoute('ecoles');
             
 
         }
