@@ -725,18 +725,74 @@ footer a #lille  {
 
 /* SCHOOL FORM */
 
-.school{
-  border: none;
-  border-bottom: 2px solid #17a2b8;
-}
-.school:focus {
-  background-color: #17a2b8;
-  color: white;
-}
 #formschool {
   width: 450px;
 }
 
+.school1{
+  border: none;
+  border-bottom: 2px solid #17a2b8;
+}
+.school1:focus {
+  background-color: #17a2b8;
+  color: white;
+}
+.school2{
+  border: none;
+  border-bottom: 2px solid #C69820;
+}
+.school2:focus {
+  background-color: #C69820;
+  color: white;
+}
+.school3{
+  border: none;
+  border-bottom: 2px solid #9B4E94;
+}
+.school3:focus {
+  background-color: #9B4E94;
+  color: white;
+}
+.school4{
+  border: none;
+  border-bottom: 2px solid #33A3D7;
+}
+.school4:focus {
+  background-color: #33A3D7;
+  color: white;
+}
+.school5{
+  border: none;
+  border-bottom: 2px solid #C69820;
+}
+.school5:focus {
+  background-color: #C69820;
+  color: white;
+}
+.school6{
+  border: none;
+  border-bottom: 2px solid #9B4E94;
+}
+.school6:focus {
+  background-color: #9B4E94;
+  color: white;
+}
+.school7{
+  border: none;
+  border-bottom: 2px solid #33A3D7;
+}
+.school7:focus {
+  background-color: #33A3D7;
+  color: white;
+}
+.school8{
+  border: none;
+  border-bottom: 2px solid #C69820;
+}
+.school8:focus {
+  background-color: #C69820;
+  color: white;
+}
 /* CONTACT FORM */
 
 #enveloppe {
