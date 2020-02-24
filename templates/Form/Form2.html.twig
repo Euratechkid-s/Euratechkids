@@ -1,11 +1,31 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
     <h1 class="text-center text-info text-uppercase"> Inscription à l'atelier : {{ titre }} </h1>
-    {{ form_start(form2, {'attr': {'novalidate': 'novalidate'}}) }}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success text-center">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('primary') %}
+        <div class="alert alert-primary text-center">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('warning') %}
+        <div class="alert alert-warning text-center">
+            {{ message }}
+        </div>
+    {% endfor %}
+    <div class="container col-md-6 col-sm-12">
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
         <div class="container col-md-6 col-sm-12">
-            {{ form_widget(form2)  }}
+            {{ form_widget(form)  }}
             <button type="submit" class="btn btn-lg btn-success mb-5 w-100">Valider</button>
         </div>
-    {{ form_end(form2) }}
 
+        {{ form_end(form) }}
+        <a href="{{ path('ateliers') }}"><i class="fa fa-arrow-left " aria-hidden="true"> Revenir aux ateliers</i></a>
+
+    </div>
 {% endblock %}

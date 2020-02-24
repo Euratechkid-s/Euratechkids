@@ -1,14 +1,13 @@
 easy_admin:
     entities:
-        Utilisateurs:
-            class: App\Entity\User
         Contact:
-            class: App\Entity\Contact 
-        # NewsLetters: 
-        #     class: App\Entity\NewsLetters 
+            class: App\Entity\Contact
+        NewsLetters:
+            class: App\Entity\NewsLetters
         Reservations:
-            class: App\Entity\ReservationAtelier
-        CreateAtelier:
+            class: App\Entity\Enfants
+
+        CreationAtelier:
             class: App\Entity\CreateAtelier
             list:
                 fields:
@@ -31,14 +30,13 @@ easy_admin:
     design:
         menu:
             - { entity: 'Contact' }
-            # - { entity: 'NewsLetters' }
+            - { entity: 'NewsLetters' }
             - { entity: 'Reservations'}
-            - { entity: 'CreateAtelier'}
+            - { entity: 'CreationAtelier'}
             - { entity: 'Ecoles'}
             - { label: 'Retour au site', url: '/', rel: 'index', icon: ''}
-
         assets:
             css:
                 - 'css/admin.css'
 
-        brand_color: '#4E67A9'
+        brand_color: '#7fe1fa'

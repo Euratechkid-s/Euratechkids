@@ -15,32 +15,46 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class EnfantsController extends AbstractController
 {
-
     /**
      * @Route("/inscription/enfants/{titre}/{id}", name="formulaire_enfants")
      */
 
-
-    public function form(Request $request,$titre, $id)
+    public function form(Request $request, $titre, $id)
     {
-        dump($id);
+
         $product = new Enfants();
         $product->setIdatelier($id);
         $form = $this->createForm(EnfantsType::class, $product);
         $form->handleRequest($request);
+        $enfant = $this->getDoctrine()->getRepository(Enfants::class)->findByExampleField($id);
+        dump(count($enfant));
+        $enfants = 12 - count($enfant) ;
+        dump($enfants);
 
-
-
-        if($form->isSubmitted() && $form->isValid())
-        {
-            dump($request);
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($product);
-            $entityManager->flush();
-            return $this->redirectToRoute('ateliers');
+        if ($enfants <= 12 && $enfants > 1) {
+            $this->addFlash('success', 'Il reste ' . $enfants  . ' places dans cet atelier');
         }
+        elseif ( $enfants == 1) {
+        $this->addFlash('success', 'Il reste ' . $enfants  . ' place dans cet atelier');
+        }
+        elseif ($enfants == 0) {
+            $this->addFlash('warning', 'Il n\'y a plus de places dans l\'atelier');
+        }
+
+            if ($form->isSubmitted() && $form->isValid()) {
+
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->persist($product);
+                $entityManager->flush();
+                $this->addFlash('primary','Votre enfant a bien été ajouté');
+                return $this->redirectToRoute('formulaire_enfants', [
+                    'titre' => $titre,
+                    'id' => $id
+                ]);
+
+            }
         return $this->render('Form/form2.html.twig', [
-            'form2' => $form->createView(),
+            'form' => $form->createView(),
             'titre' => $titre
         ]);
 

@@ -19,7 +19,7 @@ class NewsLetters
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $email2;
+    private $email;
 
     public function getId(): ?int
     {
@@ -28,12 +28,12 @@ class NewsLetters
 
     public function getEmail(): ?string
     {
-        return $this->email2;
+        return $this->email;
     }
 
-    public function setEmail(string $email2): self
+    public function setEmail(string $email): self
     {
-        $this->email = $email2;
+        $this->email = $email;
 
         return $this;
     }

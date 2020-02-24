@@ -12,6 +12,7 @@ use Doctrine\Common\Persistence\ManagerRegistry;
  * @method Enfants[]    findAll()
  * @method Enfants[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
+
 class EnfantsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
@@ -19,22 +20,21 @@ class EnfantsRepository extends ServiceEntityRepository
         parent::__construct($registry, Enfants::class);
     }
 
-    // /**
-    //  * @return Enfants[] Returns an array of Enfants objects
-    //  */
-    /*
-    public function findByExampleField($value)
+     /**
+      * @return Enfants[] Returns an array of Enfants objects
+      */
+      
+
+    public function findByExampleField($id)
     {
         return $this->createQueryBuilder('e')
-            ->andWhere('e.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('e.id', 'ASC')
-            ->setMaxResults(10)
+            ->andWhere('e.idatelier = :id')
+            ->setParameter('id', $id)
+            ->setMaxResults(12)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
 
     /*
     public function findOneBySomeField($value): ?Enfants

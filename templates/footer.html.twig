@@ -1,6 +1,6 @@
 {% block footer %}
 <footer>
-    {# {% if form2 is defined %} #}
+    {% if form2 is defined %}
     <div class="footer" id="footer">
         <div class="container">
             <div class="row">
@@ -19,7 +19,7 @@
                     </ul>
                 </div>
 
-            {# <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+            <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
                 <h3> Newsletter </h3>
                 <ul>
                     <li>
@@ -30,7 +30,7 @@
                         </div>
                         {{ form_end(form2) }}
                     </li>
-                </ul> #}
+                </ul>
                 
                     <ul class="social">
                         <li> <a href="https://www.facebook.com/euratechkids" target="blank"> <i class="fab fa-facebook"></i></a> </li>
@@ -59,6 +59,6 @@
         </div>
     </div>
 </footer>
-{# {% endif %} #}
+{% endif %}
 
 {% endblock %}
