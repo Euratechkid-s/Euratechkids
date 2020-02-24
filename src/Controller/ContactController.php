@@ -59,7 +59,7 @@ class ContactController extends AbstractController
                         ])
                     ;
                     $mailer->send($email);
-        
+                    $this->addFlash('success','Votre mail a bien été envoyé');
                     $manager->persist($contact);
                     $manager->flush();
                     return $this->redirectToRoute('home_page');

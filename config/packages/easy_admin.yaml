@@ -30,6 +30,7 @@ easy_admin:
         menu:
             - { entity: 'Contact' }
             - { entity: 'NewsLetters' }
+            - { entity: 'Reservations'}
             - { entity: 'CreateAtelier'}
             - { entity: 'Ecoles'}
             - { label: 'Retour au site', url: '/', rel: 'index', icon: ''}

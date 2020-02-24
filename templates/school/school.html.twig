@@ -4,6 +4,14 @@
 
 {% block body %}
 
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success text-center">
+            {{ message }}
+        </div>
+{% endfor %}
+
+
+
 <div class="container">
 	<h5 class="text-center display-4 pb-5 pt-5"><span id="n">Programme</span> <span id="o">écoles</span></h5>
 </div>

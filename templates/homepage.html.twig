@@ -1,6 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success text-center">
+            {{ message }}
+        </div>
+{% endfor %}
+
     <div id="progress"></div>
     <img src="css/images/robot2.png" id="android"/>
      <header>
@@ -318,7 +325,6 @@
 
 
 <!-- Formulaire de contact -->
-
 
 
 <div class="container pt-5 pb-5" id="contactform">

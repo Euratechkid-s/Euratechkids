@@ -39,6 +39,7 @@ class SchoolController extends AbstractController
             
             $manager->persist($school);
             $manager->flush();
+            $this->addFlash('success','Votre mail a bien été envoyé');
             return $this->redirectToRoute('ecoles');
             
 
