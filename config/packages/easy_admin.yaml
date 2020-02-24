@@ -1,9 +1,11 @@
 easy_admin:
     entities:
+        Utilisateurs:
+            class: App\Entity\User
         Contact:
             class: App\Entity\Contact 
-        NewsLetters: 
-            class: App\Entity\NewsLetters 
+        # NewsLetters: 
+        #     class: App\Entity\NewsLetters 
         Reservations:
             class: App\Entity\ReservationAtelier
         CreateAtelier:
@@ -29,7 +31,7 @@ easy_admin:
     design:
         menu:
             - { entity: 'Contact' }
-            - { entity: 'NewsLetters' }
+            # - { entity: 'NewsLetters' }
             - { entity: 'Reservations'}
             - { entity: 'CreateAtelier'}
             - { entity: 'Ecoles'}
